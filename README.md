@@ -18,12 +18,12 @@ Một cửa sổ sẽ bật lên để bạn chọn loại giắc cắm là **He
 + Hiện tại chỉ hỗ trợ chế độ **Headset** và chế độ **Headphones**
 
 # **Cài đặt**
-1. Copy **VerbStub.kext** vào **kext folder**
+**1**. Copy **VerbStub.kext** vào **kext folder**
 
-    - Với **Clover**: EFI/Clover/kext/Other
-    - Với **Opencore**: EFI/OC/kext, **nhớ snap lại config**
+   - Với **Clover**: EFI/Clover/kext/Other
+   - Với **Opencore**: EFI/OC/kext, **nhớ snap lại config**
 
-2. Chạy **install.sh** trong **ComboJack_Installer/install.sh**, Sau đó **ComboJack** sẽ được cài đặt.
+**2**. Chạy **install.sh** trong **ComboJack_Installer/install.sh**, Sau đó **ComboJack** sẽ được cài đặt.
 
 # **Thêm codec bạn muốn**
 + **Hãy đến đây**: [**Thêm codec**](https://github.com/torvalds/linux/blob/master/sound/pci/hda/patch_realtek.c)
