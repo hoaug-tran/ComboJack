@@ -1,35 +1,28 @@
-# **ComboJack dành cho Dell series**
-
-Một cửa sổ sẽ bật lên để bạn chọn loại giắc cắm là Headset hay Headphones. 
+# ComboJack for Dell series
+An Pop up to select type of jack that you plug in
 
 <p align="center">
     <img src="./popup.png"/>
 </p>
 
-# **Hỗ trợ các ALC:**
-
+# Support
 + ALC255
 + ALC256
 + ALC295 (Dell Inspiron 7590/7591)
 + ALC298
 
-# Tình trạng
+# Status
++ Currently support only Headset mode and Headphones mode due to my ALC295
++ You can bring it back by comment out below line in hda-verb
 
-+ Hiện tại chỉ hỗ trợ chế độ Headset và chế độ Headphones
+```c
+    GET_CFSTR_FROM_DICT(Merged, @"btnLinein")
+```
 
-# **Cài đặt**
-1. Copy VerbStub.kext vào kext folder
+# Installation
+1. Copy VerbStub.kext into your Clover/kext/Other
+2. Run 'bash install.sh' and you good to go.
 
-    - Với **Clover**: EFI/Clover/kext/Other
-    - Với **Opencore**: EFI/OC/kext, **nhớ snap lại config**
-
-2. Chạy "install.sh" trong ComboJack_Installer/install.sh, Sau đó ComboJack sẽ được cài đặt.
-
-# **Thêm codec bạn muốn**
-+ Hãy đến đây: [i want more codec](https://github.com/torvalds/linux/blob/master/sound/pci/hda/patch_realtek.c)
-+ Hãy thử tìm codec của bạn và thêm nó vào hda-verb.m trong dự án
-
-# **More**
-
-- Phiên bản này chỉ là bản reup + translate từ https://github.com/lvs1974/ComboJack
-- Hãy download ComboJack tại Release.
+# Add your codec
++ Go here: https://github.com/torvalds/linux/blob/master/sound/pci/hda/patch_realtek.c
++ Try finding your codec and add it into hda-verb.m in project
