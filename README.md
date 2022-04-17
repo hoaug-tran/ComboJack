@@ -31,5 +31,4 @@ Một cửa sổ sẽ bật lên để bạn chọn loại giắc cắm là **He
 
 # **Download**
 
-- **Phiên bản này chỉ là bản reup + translate từ [lvs1974](https://github.com/lvs1974/ComboJack)**
 - **Hãy download ComboJack tại [Release](https://github.com/HowNeft/ComboJack/releases/tag/Release)**.
