@@ -26,7 +26,7 @@ A window will appear and allow you to choose **Headphones** or **Headsed** mode 
 
    - If you using **Clover** copy **VerbStub.kext** to : EFI/Clover/kexts/Other
    - If you using **Opencore** copy **VerbStub.kext**: EFI/OC/kexts. 
-      + You need add kext to Config.plist so you just need open Config.plist with [Propertree](https://github.com/corpnewt/ProperTree) and Press CTRL + R, kext will be automatically added. After that, Ctrl + S to save.
+      + You need add kext to Config.plist so you just need open Config.plist with [Propertree](https://github.com/corpnewt/ProperTree) and Press CTRL + R, choose folder EFI/OC. After that kext will be automatically added. Afterward Ctrl + S to save.
 
 **3**. Run **install.sh** in **ComboJack_Installer/install.sh** then **Combo Jack** will be installed.
 
