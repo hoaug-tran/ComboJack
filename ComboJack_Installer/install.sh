@@ -19,10 +19,11 @@ sudo rm -f /usr/local/share/ComboJack/Headphone.icns
 sudo rm -f /usr/local/share/ComboJack/l10n.json
 
 # install 
-sudo mkdir -p /usr/local/sbin
+mkdir -p /usr/local/sbin
 sudo cp ComboJack /usr/local/sbin
 sudo chmod 755 /usr/local/sbin/ComboJack
 sudo chown root:wheel /usr/local/sbin/ComboJack
+sudo spctl --add /usr/local/sbin/ComboJack
 sudo cp hda-verb /usr/local/sbin
 #sudo chmod 755 /usr/local/sbin/hda-verb
 #sudo chown root:wheel /usr/local/sbin/hda-verb
@@ -36,7 +37,6 @@ sudo chmod 644 /Library/LaunchDaemons/com.XPS.ComboJack.plist
 sudo chown root:wheel /Library/LaunchDaemons/com.XPS.ComboJack.plist
 sudo launchctl load /Library/LaunchDaemons/com.XPS.ComboJack.plist
 echo
-echo "Install successfully!"
 echo "Please reboot! Also, it may be a good idea to turn off \"Use"
 echo "ambient noise reduction\" when using an input method other than"
 echo "the internal mic (meaning line-in, headset mic). As always: YMMV."
