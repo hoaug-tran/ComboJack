@@ -17,14 +17,17 @@ A window will appear and allow you to choose **Headphones** or **Headsed** mode 
 
 + Currently only **Headphones** mode and **Headset** mode are supported
 
-# **Cài đặt**
-**1**. Copy **VerbStub.kext** to **kexts folder**
+# **Installation**
+**1**. Remove CodecCommander.kext if you use
+**2**. Copy **VerbStub.kext** to **kexts folder**
 
-   - If you using **Clover**: EFI/Clover/kext/Other
-   - If you using **Opencore**: EFI/OC/kext. ! You need add kext to Config.plist so you just need open Config.plist with Propertree and Press CTRL + R, kext will be automatically added. After that, Ctrl + S to save.
+   - If you using **Clover** copy **VerbStub.kext** to : EFI/Clover/kexts/Other
+   - If you using **Opencore** copy **VerbStub.kext**: EFI/OC/kexts. (You need add kext to Config.plist so you just need open Config.plist with Propertree and Press CTRL + R, kext will be automatically added. After that, Ctrl + S to save)
 
-**2**. Run **install.sh** in **ComboJack_Installer/install.sh** then **Combo Jack** will be installed.
+**3**. Run **install.sh** in **ComboJack_Installer/install.sh** then **Combo Jack** will be installed.
 
 # **Download**
 
 - **Download ComboJack from [HERE](https://github.com/HowNeft/ComboJack/releases/tag/Release)**.
+
+**Original sources:** [hackintosh-stuff](https://github.com/hackintosh-stuff/ComboJack)
